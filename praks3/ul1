@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#kuupäev ja ajaga seotud info
+#
+#skripti algus
+#
+echo today is `date'+%d.%m.%Y'`
+echo time is `date '+%H:%M:%S'`
+cal
+#
+#lõpp
