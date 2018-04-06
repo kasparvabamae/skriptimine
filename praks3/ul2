@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+#.logi faili otsing
+#
+#skripti algus
+find /var/* -name '.log' 2>> /dev/null -exec wc -l {} \; | sort -rn
+#
+#lõpp
+#
