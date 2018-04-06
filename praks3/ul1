@@ -9,3 +9,4 @@ echo time is `date '+%H:%M:%S'`
 cal
 #
 #lõpp
+#
