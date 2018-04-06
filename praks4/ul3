@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+#bussi ekskursioon
+#
+#scripti algus
+echo -n "sisesta reisijaid grupis: "
+read grupis
+echo "inimesi grupis on $grupis"
+#
+echo -n "sisesta bussi kohtade arv: "
+read kohad
+echo "kohtate arv bussis on $kohad"
+#mitu bussi l2heb vaja
+busside_arv=`expr $grupis / $kohad`
+#mitu inimest j22b maha
+mahaj22nud=`expr $grupis % $kohad`
+echo "Täitakese $busside_arv bussi ja maha jäävad $mahaj22nud inimest"
+#
+#lõpp
+#
