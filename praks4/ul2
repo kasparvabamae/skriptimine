@@ -1,0 +1,32 @@
+#!/bin/bash
+#
+#arvutab küpsiste pakkide arvu
+#
+#scripti algus
+#
+echo -n "sisesta aluskandiku pikkus: "
+read pikkus
+echo -n "sisesta aluskandiku laius: "
+read laius
+#aluskandiku pindala
+kandik=`expr $pikkus \* $laius`
+echo "kandiku pindala $kandik"
+echo -n "sisesta kypsiste_suurus: "
+read k_suurus
+echo -n "sisesta kypsiste_laius: "
+read k_laius
+#küpsiste pindala
+kypsis=`expr $k_suurus \* $k_laius`
+echo "küpsise pindala $kypsis"
+#mitu kypsist on kihises
+kihis=`expr $kandik / $kypsis`
+echo "küpsiseid kihises on $kihis"
+echo -n "sisesta kypsiseid pakis:"
+read pakk
+echo -n "Sisesta kihtide arv " 
+read kihid
+# kokku kupsiseid
+kokku=`expr $kihis \* $kihid`
+#kypsiste sisaldus pakis
+pakide_arv=`expr $kokku / $pakk`
+echo "kypsiste pakke, mis on vaja osta, on $pakide_arv"
