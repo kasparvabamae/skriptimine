@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+#näitab kaua masin tööd on teinud
+uptime | awk '{print "praks3 at "$1,$2,$3,$4 }' | tr -d ','
+#
+#lõpp
