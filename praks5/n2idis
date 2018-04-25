@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+#
+#
+#
+#
+echo -n "Sisesta a külje väärtus: "
+read a
+echo -n "Sisesta b külje väärtus: "
+read b
+#
+#arvutamine
+#
+#a ruudus
+a2=$(($a * $a))
+#b ruudus
+b2=$(($b * $b))
+#c2
+c2=$(($a2 + $b2))
+#c
+c=$(echo "scale2;sqrt($c2)" | bc)
+# väljastame c
+echo "c = $c"
