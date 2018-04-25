@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+#mitu bussi l2heb vaja resisi jaoks
+#
+#skripti algus
+echo -n "sisesta reisijate arv: "
+read reis
+echo -n "sisesta kohtade arv bussis: "
+read koht
+#arvutused
+#arvutame mitu bussi l2heks vaja
+buss=$(( $reis / $koht ))
+#arvutame palju ylejaanuid on
+yle=$(( $reis % $koht ))
+#palju extra busse l2heks vaja
+if [ $yle -gt 0 ]
+then
+	buss=$(( $buss + 1 ))
+fi
+#tulemuste valjastamine
+#
+echo "kokku l2heb vaja $buss -si"
+#
+#skripti lõpp
