@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+#kolmnurga küljede väärtused
+#
+#
+#
+#skripti algus
+echo -n "Sisesta a külje väärtus: "
+read a
+echo -n "Sisesta b külje väärtus: "
+read b
+echo -n "Sisesta c külje väärtus: "
+read c
+#p
+p=$( echo "scale=2;($a + $b + $c)/2" | bc )
+echo "p = $p"
+#kolmnurga pindala
+s=$(echo "scale=2;sqrt($p*($p - $a)*($p - $b)*($p - $c))" | bc )
+echo "pindala = $s"
+#skirpti lõpp
