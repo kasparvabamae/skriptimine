@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+#
+#
+#skripti algus
+osch=0
+echo "1. Unix (Sun Os)"
+echo "2. Linux (Red Hat)"
+
+echo -n "Sisesta millise os valid [1 või 2]? "
+read osch
+
+if [ $osch -eq 1 ] ; then
+	echo "Sa valisid Unix (Sun Os)"
+else 
+	if [ $osch -eq 2 ] ; then
+		echo "Sa valisid Unix (Red Hat)"
+	else
+		echo "Kui sulle ei meeldi Unix/Linux OS."
+	fi
+fi
+#skripti lõpp
