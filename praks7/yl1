@@ -1,0 +1,25 @@
+#!/bin/bash
+#Kes oled oletavalt oma vanusele
+#
+echo -n "Sisesta oma vanus: "
+read age
+if test $age -gt 0 -a $age -lt 11
+	then
+		echo "oled laps"
+
+elif test $age -gt 11 -a $age -lt 18
+	then
+		echo "oled nooruk"
+
+elif test $age -gt 18 -a $age -lt 63
+	then
+		echo "oled täiskasvanud"
+
+elif test $age -ge 63
+	then
+		echo "oled senioor"
+else
+	echo "vigane sisend"
+
+fi
+#skripti lõpp
