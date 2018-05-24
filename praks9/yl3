@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+#
+echo -n "Sisesta ridade arv: "
+read g
+echo -n "Sisesta tarnide arv: "
+read h
+
+for (( i = 1; i <= $g; i++ ))
+	do
+		echo -n "$i."
+
+
+if [ $i == 1 ] || [ $i == $h ]
+	then
+		for (( f = 1; f <= $h; f++ ))
+			do
+				echo "*"
+					done
+	else
+		for (( v = 2; v < $h; v++ ))
+			do
+				echo " "
+	done
+fi
+	done
+echo ""
+done
+
